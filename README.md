@@ -102,6 +102,8 @@ aztec start --node --archiver --sequencer \
   screen -r aztec
   ```
 - To Get the PEER ID of your sequencer:
-  ```sudo docker logs $(docker ps -q --filter ancestor=aztecprotocol/aztec:latest | head -n 1) 2>&1 | grep -i "peerId" | grep -o '"peerId":"[^"]*"' | cut -d'"' -f4 | head -n 1```
+  ```bash
+  sudo docker logs $(docker ps -q --filter ancestor=aztecprotocol/aztec:latest | head -n 1) 2>&1 | grep -i "peerId" | grep -o '"peerId":"[^"]*"' | cut -d'"' -f4 | head -n 1
+  ```
 - For any errors/feedback dm me @Shinosuka_eth on Telegram, Twitter & Discord
 ---
